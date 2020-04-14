@@ -150,6 +150,45 @@
 		</table>
 	</div>
 
+	<div class="feedback">
+		<h2>Остались вопросы?</h2>
+		<p class="feedback-tip">Свяжитесь с нами, и мы развеем оставшиеся у вас сомнения!</p>
+
+		<form action="/keksby-mail" method="POST" class="feedback-form">
+			<div class="feedback-form-group">
+				<label for="fullname-field">Представьтесь, пожалуйста:</label>
+				<input type="text" name="fullname" id="fullname-field">
+			</div>
+			<div class="feedback-form-group">
+				<label for="phone-field">Контактный телефон:</label>
+				<input type="tel" name="phone" id="phone-field">
+			</div>
+			<div class="feedback-form-group">
+				<label for="email-field">Электронная почта:</label>
+				<input type="email" name="email" id="email-field">
+			</div>
+			<div class="checkbox-area">
+				<label>
+					Я согласен получать спам и смс на телефон
+					<input type="checkbox" name="subscription">
+				</label>
+			</div>
+			<div class="feedback-form-group">
+				<label for="topic-field">Тема обращения:</label>
+				<select name="topic" id="topic-field">
+					<option value="1">Условия доставки</option>
+					<option value="2">Возврат товара</option>
+					<option value="3">Жалоба в Роспотребнадзор</option>
+				</select>
+			</div>
+			<div class="feedback-form-group">
+				<label for="message-textarea">Текст обращения:</label>
+				<textarea name="message" id="message-textarea" cols="30" rows="10"></textarea>
+			</div>
+			<input type="submit" value="Отправить" class="btn">
+		</form>
+	</div>
+
 
 	<div class="page-footer">
 		<div class="footer-top">
