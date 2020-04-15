@@ -34,15 +34,15 @@
 	<div class="features">
 		<ul>
 			<li class="feature-item">
-				<h2>Выбор</h2>
+				<h2 class="feature-title">Выбор</h2>
 				<p>Ваш питомец оценит широту нашего ассортимента аксессуаров.</p>
 			</li>
 			<li class="feature-item">
-				<h2>Качество</h2>
+				<h2 class="feature-title">Качество</h2>
 				<p>Наши товары не сломаются на второй день. Только на третий.</p>
 			</li>
 			<li class="feature-item">
-				<h2>Безопасность</h2>
+				<h2 class="feature-title">Безопасность</h2>
 				<p>Все изготовлено из натуральных материалов, безопасных для котов.</p>
 			</li>
 		</ul>
@@ -50,20 +50,20 @@
 
 
 	<div class="cat-reference">
-		<h2>Немного теории</h2>
+		<h2 class="section-title">Немного теории</h2>
 		<a href="#" title="Открыть справочник" class="btn">Справочник</a>
 		<dl>
-			<dt>
+			<dt class="reference-title">
 				Окрас кошек и котов
-				<i> источник:<a href="https://ru.wikipedia.org" target="_blank">wikipedia</a></i>
+				<i class="reference-source"> источник:<a href="https://ru.wikipedia.org" target="_blank">wikipedia</a></i>
 			</dt>
 			<dd>
 				<img src="img/article-1.jpg" alt="Окрас кошек и котов" width="100" height="100">
 				<p>Окрас шерсти, кожи и глаз кошки обусловлен присутствием в них пигмента меланина. Меланин находится в теле волоса в виде микроскопических гранул, которые различаются по форме, размеру и количеству, что и вызывает различия в окрасе.</p>
 			</dd>
-			<dt>
+			<dt class="reference-title">
 				Кошкин дом
-				<i>источник: <a href="http://kotmur.spb.ru" target="_blank">kotmur.spb.ru</a></i>
+				<i class="reference-source">источник: <a href="http://kotmur.spb.ru" target="_blank">kotmur.spb.ru</a></i>
 			</dt>
 			<dd>
 				<img src="img/article-2.jpg" alt="Кошкин дом" width="100" height="100">
@@ -74,23 +74,23 @@
 
 
 	<div class="reviews">
-		<h2>Довольные коты</h2>
+		<h2 class="section-title">Довольные коты</h2>
 		<a href="#" title="Посмотреть все отзывы" class="btn">Все отзывы</a>
 		<div class="reviews-list">
 			<blockquote class="review-item">
 				<p>Спасибо Кексу за давно напрашивающуюся идею! Набрал себе очков на все случаи жизни: для чтения и для вечеринки с котанами B-)</p>
-				<cite>Барсик, г. Москва</cite>
+				<cite class="review-author">Барсик, г. Москва</cite>
 			</blockquote>
 			<blockquote class="review-item">
 				<p>Я просто не могу без шопинга и теперь не нужно тащить хозяйку в магазин, заказываю все аксессуары на сайте у Кекса онлайн!</p>
-				<cite>Мурка, г. Санкт-Петербург</cite>
+				<cite class="review-author">Мурка, г. Санкт-Петербург</cite>
 			</blockquote>
 		</div>
 	</div>
 
 
 	<div class="popular-and-price">
-		<h2>Популярные товары</h2>
+		<h2 class="section-title">Популярные товары</h2>
 		<a href="#" title="Посмотреть все товары" class="btn">Каталог</a>
 		<div class="popular-items">
 			<div class="catalog-item">
@@ -115,7 +115,7 @@
 				<a href="#" class="btn">Купить</a>
 			</div>
 		</div>
-		<h2>Прайс-лист на услуги</h2>
+		<h2 class="section-title">Прайс-лист на услуги</h2>
 		<table class="price-list">
 			<tr>
 				<th class="price-number">№</th>
@@ -150,8 +150,9 @@
 		</table>
 	</div>
 
+
 	<div class="feedback">
-		<h2>Остались вопросы?</h2>
+		<h2 class="section-title">Остались вопросы?</h2>
 		<p class="feedback-tip">Свяжитесь с нами, и мы развеем оставшиеся у вас сомнения!</p>
 
 		<form action="/keksby-mail" method="POST" class="feedback-form">
@@ -161,11 +162,11 @@
 			</div>
 			<div class="feedback-form-group">
 				<label for="phone-field">Контактный телефон:</label>
-				<input type="tel" name="phone" id="phone-field">
+				<input type="text" name="phone" id="phone-field">
 			</div>
 			<div class="feedback-form-group">
 				<label for="email-field">Электронная почта:</label>
-				<input type="email" name="email" id="email-field">
+				<input type="text" name="email" id="email-field">
 			</div>
 			<div class="checkbox-area">
 				<label>
