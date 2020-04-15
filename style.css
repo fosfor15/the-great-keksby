@@ -15,6 +15,15 @@ body {
     background-color: white;
 }
 
+.section-title {
+    margin: 0 180px 60px 0;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+    color: #a38b70;
+}
+
 .container {
     width: 1020px;
     margin: 0 auto;
@@ -25,23 +34,26 @@ body {
     clear: both;
 }
 
-.section-title {
-    font-family: Georgia, serif;
-    font-weight: bold;
-    font-size: 45px;
-    line-height: 55px;
-    color: #a38b70;
-}
-
 .btn {
+    display: inline-block;
+    width: 146px;
+    padding: 10px;
+    border: 2px solid #a38b70;
+    border-radius: 2px;
     color: #a38b70;
+    vertical-align: top;
+    text-align: center;
+    font: inherit;
     text-decoration: none;
     text-transform: uppercase;
+    word-wrap: break-word;
 }
 .btn:hover {
+    border-color: #8d745a;
     color: #8d745a;
 }
 .btn:active {
+    border-color: #8d745a;
     color: rgba(141, 116, 90, 0.3);
 }
 
@@ -61,16 +73,24 @@ body {
     width: 205px;
     height: 55px;
 }
+.header-logo img {
+    width: 205px;
+    height: 55px;
+}
 .main-nav {
     float: left;
     width: 520px;
-    margin: 0;
-    margin-left: 125px;
+    margin: 18px 0 0 125px;
     padding: 0;
     list-style: none;
 }
 .main-nav li {
+    float: left;
+    margin-right: 50px;
     text-transform: uppercase;
+}
+.main-nav li:last-child {
+    margin: 0;
 }
 .main-nav a {
     color: white;
@@ -84,6 +104,19 @@ body {
 }
 .btn-quick-order {
     float: right;
+    margin-top: 6px;
+    border-color: white;
+    color: white;
+}
+.btn-quick-order:hover {
+    background-color: white;
+    border-color: white;
+    color: #404040;
+}
+.btn-quick-order:active {
+    background-color: white;
+    border-color: white;
+    color: rgba(64, 64, 64, 0.3);
 }
 
 .promo {
@@ -109,30 +142,44 @@ body {
     list-style: none;
 }
 .feature-item {
+    position: relative;
     float: left;
     width: 279px;
     padding: 90px 30px 0 30px;
     border-left: 1px solid #d9d9d9;
     text-align: center;
 }
+.feature-item::before {
+    position: absolute;
+    content: '';
+    width: 65px;
+    height: 65px;
+    top: 0;
+    left: 137px;
+    background: url('img/sprite.png') no-repeat;
+}
 .feature-item:first-child {
     border-left-color: transparent;
 }
-.feature-choice {
-    background: url('img/feature-1.png') top center no-repeat;
+.feature-choice::before {
+    background-position: -5px -5px;
 }
-.feature-quality {
-    background: url('img/feature-2.png') top center no-repeat;
+.feature-quality::before {
+    background-position: -5px -76px;
 }
-.feature-safety {
-    background: url('img/feature-3.png') top center no-repeat;
+.feature-safety::before {
+    background-position: 1px -143px;
 }
 .feature-title {
+    margin: 0 0 20px;
     font-family: Georgia, serif;
     font-weight: bold;
     font-size: 30px;
     line-height: 30px;
     color: #a38b70;
+}
+.feature-item p {
+    margin: 0;
 }
 
 
@@ -141,13 +188,24 @@ body {
     padding: 70px 0 90px;
     background-color: #f2f2f2;
 }
+.cat-reference .container {
+    position: relative;
+}
+.to-full-reference {
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
 .cat-reference dl {
     width: 830px;
+    margin: 0;
+    padding: 0;
 }
 .theory-container:first-child {
     margin-bottom: 70px;
 }
 .reference-title {
+    display: inline;
     margin: 0 0 10px 0;
     font-size: 24px;
     font-weight: bold;
@@ -159,13 +217,34 @@ body {
     color: #666666;
 }
 .cat-reference dd {
+    position: relative;
+    min-height: 100px;
     margin: 0;
+    padding-left: 130px;
 }
 .cat-reference dd img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
     border-radius: 5px;
 }
+.cat-reference dd p {
+    margin: 0;
+}
 .reference-source a {
+    position: relative;
     color: #a38b70;
+}
+.reference-source a::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -10px;
+    width: 8px;
+    height: 8px;
+    background: url('img/sprite.png') -5px -210px no-repeat;
 }
 .reference-source a:hover {
     color: #8d745a;
