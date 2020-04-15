@@ -258,12 +258,23 @@ body {
 .reviews {
     padding: 70px 0 90px;
 }
+.reviews .container {
+    position: relative;
+}
+.to-all-reviews {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 .review-item {
     float: left;
     width: 377px;
     margin: 0 80px 0 0;
     padding: 0 0 0 50px;
     border-left: 3px solid #a38b70;
+}
+.review-item p {
+    margin: 0 0 15px;
 }
 .review-author {
     font-weight: bold;
@@ -276,25 +287,68 @@ body {
     padding: 70px 0 90px;
     background-color: #f2f2f2;
 }
+.popular-and-price .container {
+    position: relative;
+}
+
+.to-catalog {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .popular-items {
     margin-bottom: 50px;
 }
 .catalog-item {
+    position: relative;
     float: left;
-    width: 308px;
+    width: 262px;
     margin-right: 48px;
+    padding: 221px 22px 15px;
+    border: 1px solid #d8d8d8;
 }
 .catalog-item:last-child {
     margin: 0;
 }
 .catalog-item img {
-    max-width: 100%;
-    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 306px;
+    height: 206px;
 }
 .catalog-item h3 {
+    float: left;
+    max-width: 205px;
+    margin: 0 0 20px;
     font-size: 16px;
     color: #000000;
 }
+.catalog-item-price {
+    float: right;
+    max-width: 55px;
+    margin: 0 0 20px;
+}
+.catalog-item .btn {
+    width: 101px;
+    background-color: #a38b70;
+    color: white;
+}
+.catalog-item .btn-info {
+    float: left;
+    clear: left;
+}
+.catalog-item .btn-buy {
+    float: right;
+}
+.catalog-item .btn:hover {
+    background-color: #8d745a;
+}
+.catalog-item .btn:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .price-list {
     width: 100%;
     border-collapse: collapse;
@@ -311,16 +365,23 @@ body {
 }
 .price-list th,
 .price-list td {
-    padding: 5px 10px;
+    padding: 10px 17px;
 }
 .price-list .price-number {
+    width: 15px;
     text-align: center;
 }
 .price-list .price-name {
+    width: 422px;
     color: #000000;
     font-weight: bold;
 }
-
+.price-list .price-master {
+    width: 306px;
+}
+.price-list .price-cost {
+    width: 135px;
+}
 
 /* Форма пользователя */
 .feedback {
